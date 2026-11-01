@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
   "name": "Token Saver - Universal Translator",
-  "version": "5.1.0",
-  "description": "Save 30-64% tokens by translating any language to any target language (EN default). Free Google Translate, draggable bubble.",
+  "version": "5.1.1",
+  "description": "Translate chat drafts before sending with Enter or the send button. Includes a language selector and draggable toggle.",
   "permissions": [
     "storage"
   ],
