@@ -1,5 +1,5 @@
 (() => {
-  console.log('[Token Saver v5.1.1] target language + send button');
+  console.log('[Token Saver v5.1.2] target language + send button');
   let enabled=true, targetLang='en', pos={top:20,right:20};
   chrome.storage.local.get(['enabled','bubblePos','targetLang']).then(s=>{
     if(s.enabled===false) enabled=false;

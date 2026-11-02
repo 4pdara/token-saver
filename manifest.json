@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Token Saver - Universal Translator",
-  "version": "5.1.1",
+  "version": "5.1.2",
   "description": "Translate chat drafts before sending with Enter or the send button. Includes a language selector and draggable toggle.",
   "permissions": [
     "storage"
@@ -11,12 +11,17 @@
   ],
   "action": {
     "default_popup": "popup.html",
-    "default_title": "Token Saver"
+    "default_title": "Token Saver",
+    "default_icon": {
+      "16": "assets/brand/icon-16.png",
+      "32": "assets/brand/icon-32.png"
+    }
   },
   "icons": {
-    "16": "icon.png",
-    "48": "icon.png",
-    "128": "icon128.png"
+    "16": "assets/brand/icon-16.png",
+    "32": "assets/brand/icon-32.png",
+    "48": "assets/brand/icon-48.png",
+    "128": "assets/brand/icon-128.png"
   },
   "content_scripts": [
     {

@@ -1,6 +1,8 @@
 # Token Saver
 
-<img src="assets/logo.png" alt="Token Saver logo" width="160">
+<img src="assets/brand/logo.png" alt="Token Saver logo" width="160">
+
+[Visit the website](https://4pdara.github.io/token-saver/)
 
 Translate eligible chat drafts to your chosen target language before sending them in ChatGPT or Claude. English is the default target; the popup lets you choose from 16 languages.
 
@@ -30,7 +32,7 @@ It is a Manifest V3 browser extension for compatible Chromium browsers, such as 
 
 ## Installation
 
-1. Open [Releases](https://github.com/4pdara/token-saver/releases/latest) and download **token-saver-v5.1.1.zip**.
+1. Open [Releases](https://github.com/4pdara/token-saver/releases/latest) and download **token-saver-v5.1.2.zip**.
 2. Extract the ZIP into a permanent folder on your computer.
 3. Open `chrome://extensions` in Chrome or `edge://extensions` in Edge.
 4. Enable **Developer mode**.
@@ -41,7 +43,7 @@ No build, API key, or package installation is required to use the release ZIP. K
 
 ### Updating an existing installation
 
-Extract the new release over the files in your existing extension folder, click **Reload** on its card in the browser's extensions page, and refresh your chat tabs. Confirm that the extension version is **5.1.1**.
+Extract the new release over the files in your existing extension folder, click **Reload** on its card in the browser's extensions page, and refresh your chat tabs. Confirm that the extension version is **5.1.2**.
 
 ## Usage
 
@@ -96,9 +98,12 @@ Tests load the actual extension in Chromium against local chat-editor fixtures w
 | `content.js` | Bubble, draft translation, target-language settings, and submission interception. |
 | `styles.css` | Bubble styling and theme support. |
 | `popup.html`, `popup.js` | Target-language selector and popup controls. |
-| `icon.png`, `icon128.png`, `assets/logo.png` | Original icons and logo from the source archive. |
+| `assets/brand/` | New token-flow logo and extension icons in 16, 32, 48, and 128 pixel sizes. |
+| `docs/` | Static product website, published with GitHub Pages. |
 | `tests/`, `playwright.config.js` | Browser regression tests. |
 
 ## Source
 
 Imported from `token-saver-FULL-REPO-v5.1.zip` (extension version 5.1.0), then updated to 5.1.1 with send-button support. The original import is retained in the Git history. The `LICENSE` file supplied with the archive is preserved in this repository.
+
+Version **5.1.2** introduces the new token-flow identity and product website. The original coin-and-bubble artwork has been removed from the current source tree.
