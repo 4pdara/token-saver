@@ -1,5 +1,5 @@
 (() => {
-  console.log('[Token Saver v5.1.2] target language + send button');
+  console.log('[Token Saver v5.1.3] short replies + send button');
   let enabled=true, targetLang='en', pos={top:20,right:20};
   chrome.storage.local.get(['enabled','bubblePos','targetLang']).then(s=>{
     if(s.enabled===false) enabled=false;
@@ -12,9 +12,10 @@
     if(c.targetLang){targetLang=c.targetLang.newValue||'en'; updateBubble();}
   });
   function isNonTargetLang(text){
-    if(!text||text.trim().length<8) return false;
+    // Short replies are still language: do not silently send them untranslated.
+    if(!text||!text.trim()) return false;
     const letters=text.match(/\p{L}/gu)||[];
-    if(letters.length<5) return false;
+    if(!letters.length) return false;
     let nonAscii=0;
     for(const ch of letters){ if(ch.codePointAt(0)>127) nonAscii++; }
     const ratio=nonAscii/letters.length;

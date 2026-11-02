@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Token Saver - Universal Translator",
-  "version": "5.1.2",
+  "version": "5.1.3",
   "description": "Translate chat drafts before sending with Enter or the send button. Includes a language selector and draggable toggle.",
   "permissions": [
     "storage"
